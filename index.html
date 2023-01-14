@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV_Nalivko</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="mobile-menu hidden">
+            <div class="mobile-menu__close-btn">&#x2715;</div>
+            <nav>
+                <a href="#contacts" class="mobile-menu__item">Contacts</a>
+                <a href="#skills" class="mobile-menu__item">Skills</a>
+                <a href="#work" class="mobile-menu__item">Work</a>
+                <a href="#education" class="mobile-menu__item">Education</a>
+                <a href="#about-me" class="mobile-menu__item">About me</a>
+            </nav>
+        </section>
+        <div class="vertical-line"></div>
+        <aside class="info">
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <section class="item-info">
+                <div class="info__photo">
+                    <img src="img/info/ava.jpg" alt="photo">
+                </div>
+                <div class="info__name">
+                    Nalivko Dmitriy
+                </div>
+                <div class="info__profession">
+                    WEB developer
+                </div>
+            </section>
+            <section id="contacts" class="item-info">
+                <h3 class="item-info__title">Contacts</h3>
+                <ul class="item-info__list">
+                    <li><i class="fa-solid fa-phone"></i> <a class="item-info__link" href="tel: +375291834060">+375 29 183-40-60</a></li>
+                    <li><i class="fa-regular fa-envelope"></i> <a class="item-info__link" href="mailto: nalivko.dmitr@gmail.com">nalivko.dmitr@gmail.com</a></li>
+                    <li><i class="fa-brands fa-linkedin"></i> <a class="item-info__link" href="https://linkedin.com/in/дима-иванов-5a59a5217">nalivko dmitriy</a></li>
+                    <li><i class="fa-brands fa-square-github"></i> github</li>
+                    <li><i class="fa-brands fa-facebook"></i> facebook</li>
+                </ul>
+            </section>
+            <section id="skills" class="item-info">
+                <h3 class="item-info__title">Skills</h3>
+                <ul class="skills__list">
+                    <li><i class="fa-brands fa-html5"></i> html</li>
+                    <li><i class="fa-brands fa-css3-alt"></i> css</li>
+                    <li><i class="fa-brands fa-js"></i> js, jQuery</li>
+                    <li><i class="fa-solid fa-database"></i> mysql</li>
+                    <li><i class="fa-brands fa-php"></i> php (Laravel, Yii2)</li>
+                    <li><i class="fa-brands fa-square-git"></i> git</li>
+                </ul>
+            </section>
+        </aside>
+        <main class="about">
+            <section id="work" class="item-about">
+                <div class="item-about__header">
+                    <h2 class="item-about__title">Work</h2>
+                    <div class="item-about__horizontal-line"></div>
+                </div>
+                <article class="item-about__article">
+                    <p class="item-about__work">
+                        <span class="item-about__place-of-work">- 2021-2022 <a class="item-about__company" href="https://phpdev.org/">PHP Dev</a></span>
+                        <br>
+                        Участие в разработке брокера микрофинансовых организаций РФ (ryabina.org) на основе фреймворка Yii2
+                    </p>
+                    <p class="item-about__work">
+                        <span class="item-about__place-of-work">- 2020-2021 <a class="item-about__company" href="https://tmtsoft.cz/">TMTSOFT</a></span>
+                        <br>
+                        Поддержка picsfordesign.com, участие в разработке <a class="item-about__company" href="https://educat.courses/courses">Educat cources</a>
+                        и внутренней crm на фреймворке Laravel 6.
+                    </p>
+                    <p class="item-about__work">
+                        <span class="item-about__place-of-work">- 2020 <a class="item-about__company" href="https://picsfordesign.com">picsfordesign.com</a> - freelance</span>
+                        <br>
+                        Первая версия сайта была реализована
+                        на фреймворке Codeigniter(1.7). Работа заключалась в добавлении и доработке функционала,
+                        правке багов. Разработка новой версии на фреймворке Laravel 5.2
+                    </p>
+                </article>
+            </section>
+            <section id="education" class="item-about">
+                <div class="item-about__header">
+                    <h2 class="item-about__title">Education</h2>
+                    <div class="item-about__horizontal-line"></div>
+                </div>
+                <article class="item-about__article">
+                    <p>среднее специальное</p>
+                    <p>2001-2005 Высший государственный колледж связи</p>
+                    <p>специальность: техник по телекоммуникациям</p>
+                    <p>специализация: сети и системы связи</p>
+                </article>
+            </section>
+            <section id="about-me" class="item-about">
+                <div class="item-about__header">
+                    <h2 class="item-about__title">About me</h2>
+                    <div class="item-about__horizontal-line"></div>
+                </div>
+                <article class="item-about__article">
+                    <p>Возраст: 36 лет</p>
+                    <p>Хобби: web, спорт, кино</p>
+                </article>
+            </section>
+            <section class="item-about">
+                <div class="slider" style="position: relative; z-index: 1">
+                    <div class="slider__button prev" style="position: absolute; display: flex; font-size: 48px; align-items: center; color: white; min-height: 100%; z-index: 10">&lsaquo;</div>
+                    <div class="slider__button next" style="position: absolute; right: 0; display: flex; font-size: 48px; align-items: center; color: white; min-height: 100%; z-index: 10">&rsaquo;</div>
+                    <div class="slides">
+                        <img class="slider__image" src="img/slider/1.jpg" alt="">
+                        <img class="slider__image" src="img/slider/2.jpg" alt="">
+                        <img class="slider__image" src="img/slider/3.jpg" alt="">
+                        <img class="slider__image" src="img/slider/4.jpg" alt="">
+                        <img class="slider__image" src="img/slider/5.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
