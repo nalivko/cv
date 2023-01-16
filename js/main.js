@@ -41,15 +41,15 @@ const menuBtn = document.querySelector('.menu-btn')
 const menuCloseBtn = document.querySelector('.mobile-menu__close-btn')
 const menu = document.querySelector('.mobile-menu')
 
-menuBtn.addEventListener('click', function () {
+menuBtn.addEventListener('click', () => {
     menu.classList.toggle('hidden')
 })
 
-menuCloseBtn.addEventListener('click', function () {
+menuCloseBtn.addEventListener('click', () => {
     menu.classList.toggle('hidden')
 })
 
-menuBtn.addEventListener('click', function () {
+menuBtn.addEventListener('click', () => {
     menu.classList.toggle('menu-active')
     menuBtn.classList.toggle('menu-active')
 })
@@ -58,4 +58,10 @@ document.querySelectorAll('.mobile-menu__item').forEach((elem) => {
     elem.addEventListener('click', () => {
         menu.classList.toggle('hidden');
     })
+})
+
+window.addEventListener('resize', () => {
+    if(window.screen.width > 450 && !menu.classList.contains('hidden')) {
+        menu.classList.toggle('hidden')
+    }
 })
